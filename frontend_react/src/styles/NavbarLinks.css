@@ -1,0 +1,44 @@
+.navbar-links-frame {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 320px; /* increased width for bigger navbar (double original) */
+  height: 48px;  /* new taller navbar height */
+  gap: 32px;     /* increase gap for a more modern spacious look */
+  background: transparent;
+  margin: 0;
+  padding: 0 32px;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: #FC4308;
+  font-size: 20px; /* larger font size for bigger navbar */
+  font-family: inherit;
+  line-height: 48px;
+  font-weight: 600;
+  display: inline-block;
+  padding: 0 8px;
+  margin: 0;
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  letter-spacing: 0.02em;
+  text-align: left;
+  vertical-align: middle;
+  height: 48px;
+  transition: color .2s;
+}
+
+.navbar-link:hover,
+.navbar-link:focus {
+  color: #A62300;
+  outline: none;
+}
+
+/* Each navbar link width for more generous sizing */
+.navbar-link-projects { width: 64px; }
+.navbar-link-portraits { width: 80px; }
+.navbar-link-fashion { width: 80px; }
+.navbar-link-fineart { width: 80px; }
