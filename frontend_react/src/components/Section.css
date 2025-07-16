@@ -2,14 +2,14 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: flex-start;
-  width: 600px;
+  align-items: flex-start; /* Image and text top-aligned */
+  width: 720px; /* Figma section width */
   min-height: 156px;
   box-sizing: border-box;
-  padding: 5px;
-  margin: 0 auto;
+  padding: 56px 60px; /* Figma frame: top/right/bottom/left */
+  margin: 0 auto 0 auto;
   background: transparent;
-  gap: 24px; /* Derived visually for spacing between left(center) and right(actions) */
+  gap: 36px; /* Visually matches Figma for img to content, replaces original 24px */
 }
 
 .section-center {
