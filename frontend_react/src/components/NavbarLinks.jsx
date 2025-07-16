@@ -8,10 +8,10 @@ import "../styles/NavbarLinks.css";
  */
 const NavbarLinks = () => (
   <nav className="navbar-links-frame">
-    <a href="#" className="navbar-link">Link 1</a>
-    <a href="#" className="navbar-link">Link 2</a>
-    <a href="#" className="navbar-link">Link 3</a>
-    <a href="#" className="navbar-link">Link 4</a>
+    <a href="#" className="navbar-link navbar-link-projects">Projects</a>
+    <a href="#" className="navbar-link navbar-link-portraits">Portraits</a>
+    <a href="#" className="navbar-link navbar-link-fashion">Fashion</a>
+    <a href="#" className="navbar-link navbar-link-fineart">Fine Art</a>
   </nav>
 );
 

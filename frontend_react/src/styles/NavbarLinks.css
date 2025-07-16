@@ -2,18 +2,36 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 162px;
+  width: 162px; /* sum of all link widths + gaps */
   height: 10px;
   gap: 10px;
   background: transparent;
+  margin: 0;
+  padding: 0;
 }
 
 .navbar-link {
   text-decoration: none;
-  color: #222; /* Placeholder, adjust if design provides */
-  font-size: 10px; /* Height match, tweak if text styling known */
+  color: #FC4308;
+  font-size: 10px;
   font-family: inherit;
   line-height: 10px;
+  font-weight: 400;
+  display: inline-block;
   padding: 0;
   margin: 0;
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  letter-spacing: normal;
+  text-align: left;
+  vertical-align: middle;
+  height: 10px;
 }
+
+/* Each navbar link width as per Figma bounding box */
+.navbar-link-projects { width: 33px; }
+.navbar-link-portraits { width: 35px; }
+.navbar-link-fashion { width: 32px; }
+.navbar-link-fineart { width: 32px; }
