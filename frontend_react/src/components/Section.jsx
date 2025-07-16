@@ -12,9 +12,9 @@ import "./ImageWrapper.css";
 export default function Section() {
   return (
     <section className="section-root">
-      {/* Left: Figma Image Wrapper */}
+      {/* Left: ImageWrapper with all spacing handled by flex and gap */}
       <ImageWrapper />
-      {/* Center: Headline & description */}
+      {/* Right: Headline, paragraph, and button vertical stack with Figma spacing/alignment */}
       <div className="section-center">
         <div className="section-content">
           <h1 className="section-headline">
@@ -24,7 +24,6 @@ export default function Section() {
             Libero justo laoreet sit amet cursus sit amet dictum sit. Consequat nisl vel pretium lectus. In ornare quam viverra orci sagittis eu volutpat odio. Euismod nisi porta lorem mollis aliquam ut porttitor leo ac felis.
           </p>
         </div>
-        {/* Actions, Figma has button visually lined below content, left aligned below text */}
         <div className="section-actions">
           <button className="section-btn">
             Contact us
