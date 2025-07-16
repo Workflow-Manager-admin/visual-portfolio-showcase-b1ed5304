@@ -1,14 +1,12 @@
 import React from "react";
 import "./FooterSection.css";
 
-const ICON_COLOR = "#fc4308";
-
 // PUBLIC_INTERFACE
 /**
  * FooterSection renders the styled bottom footer as designed in Figma.
- * - Contains logo, site nav links, and social icons.
+ * - Contains logo, site nav links, and a NEW precise social media row.
  * - Credits and legal info.
- * - Easy to extend nav and icons.
+ * - Social row uses 4 placeholders (to be replaced with SVGs for Figma 1:130, 1:132, 1:134, 1:136).
  */
 export default function FooterSection() {
   return (
@@ -17,7 +15,7 @@ export default function FooterSection() {
       <div className="footer-content-bar">
         {/* Logo Area */}
         <div className="footer-logo-group">
-          {/* Logo Icon */}
+          {/* Logo Icon (unchanged) */}
           <svg
             className="footer-logo-icon"
             width="21"
@@ -27,12 +25,10 @@ export default function FooterSection() {
             xmlns="http://www.w3.org/2000/svg"
             aria-label="Logo icon"
           >
-            {/* SVG: simple rounded rectangle - update path with real logo as available */}
-            <rect width="21" height="9" rx="2" fill={ICON_COLOR}/>
+            <rect width="21" height="9" rx="2" fill="#fc4308"/>
           </svg>
           <span className="footer-logo-text">Capture Studio</span>
         </div>
-
         {/* Navigation Links */}
         <nav className="footer-nav" aria-label="Footer navigation">
           <a href="/projects">Projects</a>
@@ -40,28 +36,30 @@ export default function FooterSection() {
           <a href="/fashion">Fashion</a>
           <a href="/fine-art">Fine Art</a>
         </nav>
-
-        {/* Social Links */}
-        <div className="footer-socials">
-          {/* Facebook */}
-          <a href="https://facebook.com" className="footer-social-icon" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
-            <svg width="12" height="12" viewBox="0 0 5 9" aria-hidden="true" focusable="false"><rect x="0" y="0" width="5" height="9" rx="1" fill={ICON_COLOR}/></svg>
+        {/* Social Links - Exact right-align, 150x12, gap 6px, 4 placeholders */}
+        <div className="footer-social-links" aria-label="Footer social media links">
+          {/* 1:130 - Placeholder for Social Icon 1 */}
+          <a href="#" className="footer-social-icon" aria-label="Social 1">
+            {/* TODO: Insert SVG for 1:130 here */}
+            <span className="footer-icon-placeholder" />
           </a>
-          {/* Instagram */}
-          <a href="https://instagram.com" className="footer-social-icon" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
-            <svg width="12" height="12" viewBox="0 0 9 9" aria-hidden="true" focusable="false"><circle cx="4.5" cy="4.5" r="4.5" fill={ICON_COLOR}/></svg>
+          {/* 1:132 - Placeholder for Social Icon 2 */}
+          <a href="#" className="footer-social-icon" aria-label="Social 2">
+            {/* TODO: Insert SVG for 1:132 here */}
+            <span className="footer-icon-placeholder" />
           </a>
-          {/* Twitter */}
-          <a href="https://twitter.com" className="footer-social-icon" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
-            <svg width="12" height="12" viewBox="0 0 9 8" aria-hidden="true" focusable="false"><ellipse cx="4.5" cy="4" rx="4.5" ry="4" fill={ICON_COLOR}/></svg>
+          {/* 1:134 - Placeholder for Social Icon 3 */}
+          <a href="#" className="footer-social-icon" aria-label="Social 3">
+            {/* TODO: Insert SVG for 1:134 here */}
+            <span className="footer-icon-placeholder" />
           </a>
-          {/* LinkedIn */}
-          <a href="https://linkedin.com" className="footer-social-icon" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
-            <svg width="12" height="12" viewBox="0 0 9 9" aria-hidden="true" focusable="false"><rect width="9" height="9" rx="2" fill={ICON_COLOR}/></svg>
+          {/* 1:136 - Placeholder for Social Icon 4 */}
+          <a href="#" className="footer-social-icon" aria-label="Social 4">
+            {/* TODO: Insert SVG for 1:136 here */}
+            <span className="footer-icon-placeholder" />
           </a>
         </div>
       </div>
-
       {/* Credits/Divider Section */}
       <div className="footer-credits-section">
         <div className="footer-divider"></div>
