@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
+// FooterSection added below
 import NavbarLinks from './components/NavbarLinks';
 import Section from './components/Section';
-
+import FooterSection from './components/FooterSection';
 // PUBLIC_INTERFACE
 function App() {
   const [theme, setTheme] = useState('light');
@@ -37,6 +38,8 @@ function App() {
           Current theme: <strong>{theme}</strong>
         </p>
       </header>
+      {/* Footer always at bottom of page */}
+      <FooterSection />
     </div>
   );
 }
