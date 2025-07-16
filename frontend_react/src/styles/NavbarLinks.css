@@ -2,36 +2,43 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 162px; /* sum of all link widths + gaps */
-  height: 10px;
-  gap: 10px;
+  width: 320px; /* increased width for bigger navbar (double original) */
+  height: 48px;  /* new taller navbar height */
+  gap: 32px;     /* increase gap for a more modern spacious look */
   background: transparent;
   margin: 0;
-  padding: 0;
+  padding: 0 32px;
 }
 
 .navbar-link {
   text-decoration: none;
   color: #FC4308;
-  font-size: 10px;
+  font-size: 20px; /* larger font size for bigger navbar */
   font-family: inherit;
-  line-height: 10px;
-  font-weight: 400;
+  line-height: 48px;
+  font-weight: 600;
   display: inline-block;
-  padding: 0;
+  padding: 0 8px;
   margin: 0;
   background: none;
   border: none;
   outline: none;
   box-shadow: none;
-  letter-spacing: normal;
+  letter-spacing: 0.02em;
   text-align: left;
   vertical-align: middle;
-  height: 10px;
+  height: 48px;
+  transition: color .2s;
 }
 
-/* Each navbar link width as per Figma bounding box */
-.navbar-link-projects { width: 33px; }
-.navbar-link-portraits { width: 35px; }
-.navbar-link-fashion { width: 32px; }
-.navbar-link-fineart { width: 32px; }
+.navbar-link:hover,
+.navbar-link:focus {
+  color: #A62300;
+  outline: none;
+}
+
+/* Each navbar link width for more generous sizing */
+.navbar-link-projects { width: 64px; }
+.navbar-link-portraits { width: 80px; }
+.navbar-link-fashion { width: 80px; }
+.navbar-link-fineart { width: 80px; }
