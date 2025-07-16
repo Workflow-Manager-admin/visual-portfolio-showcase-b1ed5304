@@ -23,22 +23,6 @@ function App() {
       <NavbarLinks />
       {/* New pixel-perfect Section component */}
       <Section />
-      <header className="App-header">
-        <button 
-          className="theme-toggle" 
-          onClick={toggleTheme}
-          aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
-        >
-          {theme === 'light' ? '🌙 Dark' : '☀️ Light'}
-        </button>
-        {/* Removed React logo import and any usage below main content */}
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <p>
-          Current theme: <strong>{theme}</strong>
-        </p>
-      </header>
       {/* Footer always at bottom of page */}
       <FooterSection />
     </div>
