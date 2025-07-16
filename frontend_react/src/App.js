@@ -31,6 +31,7 @@ function App() {
         >
           {theme === 'light' ? '🌙 Dark' : '☀️ Light'}
         </button>
+        {/* Removed React logo import and any usage below main content */}
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
