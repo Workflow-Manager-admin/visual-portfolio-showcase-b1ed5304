@@ -16,7 +16,7 @@ import "./FooterSection.css";
 function FooterLogo() {
   return (
     <div className="footer-figma-logo-wrap">
-      <span className="footer-logo" aria-label="Visual Portfolio Logo">
+      <span className="footer-logo" aria-label="Capture Studio Logo" title="Capture Studio">
         {/* Logo: Rounded corner rectangle + circle lens inline SVG (from Figma) */}
         <svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true" fill="none">
           <rect x="5" y="10" width="22" height="16" rx="3" stroke="#FC4308" strokeWidth="2"/>
@@ -24,7 +24,7 @@ function FooterLogo() {
           <rect x="12" y="7" width="8" height="3" rx="1" fill="#FC4308"/>
         </svg>
       </span>
-      <span className="footer-logo-brand">Visual Portfolio</span>
+      <span className="footer-logo-brand">Capture Studio</span>
     </div>
   );
 }
@@ -81,13 +81,16 @@ function FooterSocial() {
 }
 
 
-// Footer credits and auxiliary policy/legal links (bottom stack under divider)
+/**
+ * Footer credits and auxiliary policy/legal links (bottom stack under divider)
+ * All footer branding, legal, and visible references use "Capture Studio".
+ */
 function FooterBottom() {
   return (
     <div className="footer-figma-verticals">
       <div className="footer-figma-credits">
         <span className="footer-credit-main">
-          © 2024 Visual Portfolio. All rights reserved.
+          © 2024 Capture Studio. All rights reserved.
         </span>
         <span className="footer-credit-designer">
           Designed by{" "}
@@ -96,6 +99,7 @@ function FooterBottom() {
             className="footer-credit-link"
             target="_blank"
             rel="noopener noreferrer"
+            title="Team Pixel website"
           >
             Team Pixel
           </a>
