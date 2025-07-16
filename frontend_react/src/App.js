@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import NavbarLinks from './components/NavbarLinks';
+import Section from './components/Section';
+
 // PUBLIC_INTERFACE
 function App() {
   const [theme, setTheme] = useState('light');
@@ -18,6 +20,8 @@ function App() {
     <div className="App">
       {/* Top navigation bar */}
       <NavbarLinks />
+      {/* New pixel-perfect Section component */}
+      <Section />
       <header className="App-header">
         <button 
           className="theme-toggle" 

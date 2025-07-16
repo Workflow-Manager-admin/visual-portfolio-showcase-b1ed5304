@@ -1,0 +1,95 @@
+.section-root {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  width: 600px;
+  min-height: 156px;
+  box-sizing: border-box;
+  padding: 5px;
+  margin: 0 auto;
+  background: transparent;
+  gap: 24px; /* Derived visually for spacing between left(center) and right(actions) */
+}
+
+.section-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 337px;
+  min-height: 146px;
+  justify-content: center;
+}
+
+.section-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  width: 337px;
+}
+
+.section-headline {
+  margin: 0;
+  padding: 0;
+  width: 337px;
+  min-height: 104px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.13;
+  color: #fc4308; /* Figma's red */
+  letter-spacing: 0px;
+  text-align: left;
+  font-family: inherit;
+}
+
+.section-paragraph {
+  margin: 0;
+  padding: 0;
+  width: 337px;
+  min-height: 30px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.35;
+  color: #fc4308; /* Figma's red */
+  letter-spacing: 0px;
+  text-align: left;
+  font-family: inherit;
+}
+
+.section-actions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* container: 60x43; pad-top/space handled below */
+  min-width: 60px;
+  min-height: 43px;
+  padding-top: 24px;
+  box-sizing: border-box;
+  justify-content: flex-start;
+}
+
+.section-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-width: 60px;
+  min-height: 19px;
+  padding: 4px 8px 5px 8px;
+  background: transparent;
+  border: 0.5px solid #fc4308; /* Figma's red */
+  border-radius: 1.5px;
+  color: #fc4308;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.25;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.section-btn:hover,
+.section-btn:focus {
+  background: rgba(252, 67, 8, 0.08);
+  outline: none;
+}
