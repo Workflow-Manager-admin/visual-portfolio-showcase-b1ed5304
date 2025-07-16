@@ -24,19 +24,31 @@
   background: transparent;
 }
 
+/* Figma logo + text */
 .footer-figma-logo-wrap {
   display: flex;
   align-items: center;
   min-width: 32px;
   min-height: 32px;
+  gap: 12px;
 }
-
 .footer-logo svg {
   display: block;
   width: 32px;
   height: 32px;
+  min-width: 32px;
+  min-height: 32px;
+}
+.footer-logo-brand {
+  margin-left: 3px;
+  font-size: 1.18rem;
+  font-weight: 700;
+  color: #fc4308;
+  opacity: 0.98;
+  letter-spacing: -0.3px;
 }
 
+/* Center nav: 4 links, orange, bold, spaced */
 .footer-nav-links {
   display: flex;
   flex-direction: row;
@@ -44,28 +56,27 @@
   align-items: center;
   flex: 1 1 auto;
   justify-content: center;
+  min-width: 240px;
 }
-
 .footer-nav-link {
-  color: #222;
-  opacity: 0.96;
+  color: #fc4308;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 600;
   text-decoration: none;
-  line-height: 1.5;
+  line-height: 1.47;
   letter-spacing: 0.01em;
   transition: color 0.2s;
-  padding: 6px 6px;
+  padding: 4px 8px;
   border-radius: 3px;
+  opacity: 1;
 }
-
-.footer-nav-link:hover,
-.footer-nav-link:focus {
-  color: #fc4308;
-  background: rgba(252, 67, 8, 0.06);
+.footer-nav-link:focus, .footer-nav-link:hover {
+  color: #c52400;
+  background: rgba(252, 67, 8, 0.065);
   outline: none;
 }
 
+/* Social block: flex, min width 150px, icons orange and centered */
 .footer-social-links {
   display: flex;
   flex-direction: row;
@@ -74,7 +85,6 @@
   min-width: 150px;
   justify-content: flex-end;
 }
-
 .footer-social-icon {
   width: 32px;
   height: 32px;
@@ -97,7 +107,6 @@
   background: #fcf2ee;
   box-shadow: 0 2px 8px 0 rgba(252,67,8,0.035);
 }
-
 .footer-social-icon svg {
   display: block;
   width: 18px;
@@ -108,11 +117,13 @@
   width: 100%;
   max-width: 656px;
   height: 1.5px;
-  background: rgba(60, 60, 60, 0.08);
+  background: #fc4308;
+  opacity: 0.13;
   margin: 22px auto 18px auto;
   border-radius: 2.5px;
 }
 
+/* Bottom (verticals): stacked block under divider. */
 .footer-figma-verticals {
   display: flex;
   flex-direction: column;
@@ -125,30 +136,29 @@
 .footer-figma-credits {
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   gap: 3px;
   margin-bottom: 0;
+  padding: 0 4px;
 }
 
 .footer-credit-main {
   color: #222;
-  font-size: 0.95rem;
+  font-size: 0.96rem;
   font-family: "Helvetica Neue", Arial, sans-serif;
-  opacity: 0.87;
-  margin: 0;
-  text-align: center;
+  opacity: 0.88;
+  font-weight: 500;
+  text-align: left;
 }
-
 .footer-credit-designer {
   color: #666;
-  font-size: 0.90rem;
+  font-size: 0.91rem;
   opacity: 0.85;
-  margin: 0;
-  text-align: center;
+  text-align: right;
   font-weight: 400;
 }
-
 .footer-credit-link {
   color: #fc4308;
   text-decoration: underline;
@@ -161,38 +171,39 @@
   outline: none;
 }
 
+/* Policy/aux links - horizontal, with orange | separators */
 .footer-figma-aux-links {
   display: flex;
   flex-direction: row;
   gap: 18px;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
-  margin-top: 0.5px;
+  margin-top: 1.5px;
   width: 100%;
   min-height: 20px;
+  padding: 0 5px;
 }
-
 .footer-aux-link {
-  color: #888;
-  font-size: 0.91rem;
+  color: #fc4308;
+  font-size: 0.95rem;
   text-decoration: none;
-  opacity: 0.85;
+  opacity: 1;
   transition: color 0.2s;
   font-family: "Helvetica Neue", Arial, sans-serif;
-  font-weight: 400;
+  font-weight: 500;
 }
-
 .footer-aux-link:hover,
 .footer-aux-link:focus {
-  color: #fc4308;
+  color: #c52400;
   text-decoration: underline;
   outline: none;
 }
-
 .footer-aux-sep {
-  color: #ccc;
-  font-size: 1.04em;
+  color: #fc4308;
+  font-size: 1.01em;
+  opacity: 0.30;
   user-select: none;
+  font-weight: 700;
 }
 
 /* Mobile responsiveness */
@@ -200,11 +211,12 @@
   .footer-figma-content-row,
   .footer-figma-verticals,
   .footer-figma-divider {
-    max-width: 98vw;
+    max-width: 99vw;
     padding-left: 2vw;
     padding-right: 2vw;
   }
 }
+
 @media (max-width: 600px) {
   .footer-figma-content-row {
     flex-direction: column;
@@ -221,4 +233,15 @@
   .footer-nav-links { flex-wrap: wrap; }
   .footer-figma-divider { margin: 16px 0 12px 0; }
   .footer-figma-verticals { gap: 5px; }
+  .footer-figma-credits {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0;
+    gap: 0px;
+    margin-bottom: 0;
+  }
+  .footer-figma-aux-links {
+    justify-content: center;
+    padding: 0;
+  }
 }
