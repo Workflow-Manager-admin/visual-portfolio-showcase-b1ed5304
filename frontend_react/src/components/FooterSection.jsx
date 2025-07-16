@@ -3,22 +3,21 @@ import "./FooterSection.css";
 
 // PUBLIC_INTERFACE
 /**
- * FooterSection - pixel-perfect footer based on Figma design and all recursive child nodes.
- * Features:
- *  - Left: Logo (inline SVG) and "Visual Portfolio"
- *  - Center: Four orange nav links, bold, spaced as in Figma
- *  - Right: Four social icons (Facebook, Instagram, Twitter, LinkedIn), #FC4308, inline SVGs
- *  - Divider: orange color
- *  - Bottom: Two-line credits row. Left: copyright,
- *            Right: Privacy Policy, Terms of Service, Cookie Settings links (orange, spaced)
- *  - All colors, type, spacing, margins, alignments, font weights, and opacities match Figma
- *  - Fully responsive (matches vertical/horizontal, mobile flows)
+ * FooterSection
+ * Pixel-perfect footer matching Figma's layout, colors, SVGs, navigation and credits, recursively extracted from all child nodes.
+ * Structure:
+ *   - Top row: Left logo (SVG+text), center nav (#fc4308 links), right vector social icons (SVGs #fc4308)
+ *   - Divider
+ *   - Bottom: Left copyright credits, right legal/policy links
+ * All paddings, spacings, opacities, orders, and responsive rules match Figma and child frames.
  */
+
 
 function FooterLogo() {
   return (
     <div className="footer-figma-logo-wrap">
-      <span className="footer-logo" aria-label="Logo">
+      <span className="footer-logo" aria-label="Visual Portfolio Logo">
+        {/* Logo: Rounded corner rectangle + circle lens inline SVG (from Figma) */}
         <svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true" fill="none">
           <rect x="5" y="10" width="22" height="16" rx="3" stroke="#FC4308" strokeWidth="2"/>
           <circle cx="16" cy="18" r="5" stroke="#FC4308" strokeWidth="2"/>
@@ -42,7 +41,7 @@ function FooterNav() {
 }
 
 function FooterSocial() {
-  // Each SVG precise and colored as per Figma (all fill/stroke #FC4308)
+  // Each icon is SVG from Figma (see child frames), all colored #fc4308, proper spacing
   return (
     <nav className="footer-social-links" aria-label="Social media">
       {/* Facebook */}
@@ -82,7 +81,7 @@ function FooterSocial() {
 }
 
 
-// Footer bottom row: divider + 2-line credits and right policies links
+// Footer credits and auxiliary policy/legal links (bottom stack under divider)
 function FooterBottom() {
   return (
     <div className="footer-figma-verticals">
